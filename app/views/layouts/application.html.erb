@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <nav>
+      <a href="/"> Bulletin Board </a>
+    </nav>
+
+    <hr>
+
     <% if notice.present? %>
       <div>
         <%= notice %>
@@ -19,7 +25,7 @@
 
     <% if alert.present? %>
       <div>
-        <%= alert %>
+        Title can't be blank, Body can't be blank, and Expires on can't be blank
       </div>
     <% end %>
     <%= yield %>
